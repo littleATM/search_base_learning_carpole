@@ -113,7 +113,7 @@ def main():
             s, r, done, info = env.step(1)
         env.render()
         print("main_step",main_step)
-        if done or main_step>100:
+        if done or main_step>200:
             s = env.reset()
             main_step = 0
 
